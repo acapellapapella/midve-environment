@@ -1,0 +1,11 @@
+configuration {
+    modi:                   "drun";
+    icon-theme:             "Papirus-Dark";
+    show-icons:             true;
+    terminal:               "kitty";
+    location:               0;
+    disable-history:        false;
+    hide-scrollbar:         true;
+    sidebar-mode:           false;
+}
+@theme "~/.config/rofi/themes/midve"

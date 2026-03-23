@@ -1,0 +1,133 @@
+* {
+  bg: rgba(6,6,10,0.72);
+  bg-left: rgba(8,8,14,0.82);
+  bg-right: rgba(5,5,9,0.65);
+  bg-sel: rgba(22,22,36,0.90);
+  border-col: rgba(30,30,48,0.60);
+  border-hi: rgba(55,55,80,0.80);
+  fg: #4a4a5a;
+  fg-bright: #c8c8e0;
+  fg-dim: #1a1a28;
+
+  background-color: transparent;
+  text-color: @fg;
+  font: "Noto Sans 12";
+}
+
+window {
+  background-color: @bg;
+  border-color: @border-col;
+  border-width: 1px;
+  border-radius: 16px;
+  width: 720px;
+  padding: 0px;
+  location: center;
+  transparency: "real";
+}
+
+mainbox {
+  background-color: transparent;
+  orientation: horizontal;
+  children: [ leftpanel, rightpanel ];
+  spacing: 0px;
+  padding: 0px;
+}
+
+leftpanel {
+  background-color: @bg-left;
+  border-radius: 16px 0px 0px 16px;
+  border-width: 0px 1px 0px 0px;
+  border-color: @border-col;
+  orientation: vertical;
+  children: [ inputbar ];
+  spacing: 0px;
+  padding: 0px;
+  width: 200px;
+  expand: false;
+}
+
+inputbar {
+  background-color: transparent;
+  padding: 22px 16px 18px 16px;
+  spacing: 0px;
+  orientation: vertical;
+  children: [ entry ];
+}
+
+entry {
+  background-color: rgba(14,14,22,0.80);
+  text-color: @fg-bright;
+  placeholder: "search...";
+  placeholder-color: #252535;
+  cursor: text;
+  font: "Noto Sans 12";
+  border-radius: 8px;
+  border-width: 1px;
+  border-color: @border-col;
+  padding: 9px 12px;
+}
+
+rightpanel {
+  background-color: @bg-right;
+  border-radius: 0px 16px 16px 0px;
+  orientation: vertical;
+  children: [ listview ];
+  padding: 10px;
+  expand: true;
+}
+
+listview {
+  background-color: transparent;
+  spacing: 2px;
+  padding: 4px;
+  lines: 7;
+  columns: 2;
+  scrollbar: false;
+  fixed-height: true;
+  fixed-columns: true;
+}
+
+element {
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 8px 12px;
+  spacing: 10px;
+  orientation: horizontal;
+  children: [ element-icon, element-text ];
+}
+
+element-icon {
+  background-color: transparent;
+  size: 20px;
+  vertical-align: 0.5;
+}
+
+element-text {
+  background-color: transparent;
+  text-color: @fg;
+  vertical-align: 0.5;
+  font: "Noto Sans 11";
+  highlight: none;
+}
+
+element normal.normal {
+  background-color: transparent;
+  text-color: @fg;
+}
+
+element selected.normal {
+  background-color: @bg-sel;
+  border-width: 1px;
+  border-color: @border-hi;
+  text-color: @fg-bright;
+}
+
+element alternate.normal {
+  background-color: transparent;
+  text-color: @fg;
+}
+
+element-text selected {
+  text-color: @fg-bright;
+  font: "Noto Sans SemiBold 11";
+}

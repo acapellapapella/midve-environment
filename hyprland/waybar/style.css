@@ -1,0 +1,218 @@
+* {
+  font-family: "Noto Sans", "Ubuntu", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+}
+
+window#waybar {
+  background-color: alpha(#06060a, 0.94);
+  color: #505060;
+  border-bottom: 1px solid #10101a;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+  margin: 0;
+  padding: 0;
+}
+
+tooltip {
+  background-color: #0e0e16;
+  border: 1px solid #20202e;
+  color: #a0a0b8;
+  border-radius: 8px;
+  padding: 6px 14px;
+}
+
+#clock {
+  padding: 0 14px;
+  margin: 3px 4px 3px 2px;
+  color: #d8d8f0;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #12121e;
+  border-radius: 6px;
+  border: 1px solid #1e1e30;
+}
+
+#clock:hover {
+  background-color: #18182a;
+  color: #ffffff;
+}
+
+#window {
+  color: #2a2a38;
+  padding: 0 10px;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+#custom-separator {
+  color: #18181e;
+  padding: 0 1px;
+  font-size: 14px;
+}
+
+#workspaces {
+  margin: 3px 4px;
+  padding: 0 2px;
+  background-color: #0c0c14;
+  border-radius: 6px;
+  border: 1px solid #16161e;
+}
+
+#workspaces button {
+  padding: 0 10px;
+  margin: 2px 1px;
+  min-width: 10px;
+  color: #282838;
+  background-color: transparent;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+#workspaces button:hover {
+  color: #606078;
+  background-color: #141422;
+}
+
+#workspaces button.active {
+  color: #08080e;
+  background-color: #b8b8d8;
+  font-weight: 800;
+}
+
+#workspaces button.urgent {
+  color: #08080e;
+  background-color: #c8a0a8;
+}
+
+#pulseaudio,
+#wireplumber,
+#network,
+#cpu,
+#memory,
+#bluetooth,
+#language {
+  padding: 0 10px;
+  margin: 3px 2px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+#cpu {
+  color: #505060;
+  background-color: #18181e;
+  border: 1px solid #222230;
+}
+
+#cpu.warning {
+  color: #504840;
+  background-color: #201810;
+}
+
+#cpu:hover {
+  background-color: #1e1e26;
+  color: #606070;
+}
+
+#memory {
+  color: #505060;
+  background-color: #16161e;
+  border: 1px solid #202030;
+}
+
+#memory:hover {
+  background-color: #1c1c26;
+  color: #606070;
+}
+
+#pulseaudio,
+#wireplumber {
+  color: #505060;
+  background-color: #18181e;
+  border: 1px solid #222230;
+}
+
+#pulseaudio.muted,
+#wireplumber.muted {
+  background-color: #0e0e14;
+  border: 1px solid #181820;
+  color: #242430;
+}
+
+#pulseaudio:hover,
+#wireplumber:hover {
+  background-color: #1e1e28;
+  color: #606070;
+}
+
+#network {
+  color: #505060;
+  background-color: #16161e;
+  border: 1px solid #202030;
+}
+
+#network.disconnected {
+  background-color: #0e0e14;
+  border: 1px solid #181820;
+  color: #242430;
+}
+
+#network.ethernet {
+  background-color: #161620;
+  border: 1px solid #20202e;
+}
+
+#network:hover {
+  background-color: #1c1c28;
+  color: #606070;
+}
+
+#bluetooth {
+  color: #505060;
+  background-color: #16161e;
+  border: 1px solid #202030;
+}
+
+#bluetooth.disabled {
+  background-color: #0c0c12;
+  border: 1px solid #161620;
+  color: #1e1e28;
+}
+
+#bluetooth:hover {
+  background-color: #1c1c28;
+  color: #606070;
+}
+
+#language {
+  color: #404050;
+  background-color: #141418;
+  border: 1px solid #1e1e24;
+  font-size: 9px;
+  font-weight: 800;
+  padding: 0 8px;
+}
+
+#tray {
+  padding: 0 10px;
+  margin: 3px 2px;
+  background-color: #0c0c14;
+  border-radius: 6px;
+  border: 1px solid #16161e;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+}
