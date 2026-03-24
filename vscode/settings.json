@@ -9,7 +9,6 @@
  "editor.smoothScrolling": true,
  "editor.mouseWheelScrollSensitivity": 1.5,
  "editor.padding": { "top": 16, "bottom": 16 },
- "editor.lineNumbers": "relative",
  "editor.rulers": [],
  "editor.wordWrap": "off",
  "editor.minimap.enabled": false,
