@@ -24,10 +24,10 @@
             "format": ""
         },
         {
-            "type": "os",
+            "type": "custom",
             "key": "  os",
             "keyColor": "cyan",
-            "format": "{3}"
+            "format": "Walter White Linux"
         },
         {
             "type": "kernel",
