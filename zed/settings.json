@@ -3,9 +3,9 @@
   "base_keymap": "VSCode",
 
   "ui_font_family": "JetBrains Mono",
-  "ui_font_size": 14,
+  "ui_font_size": 16,
   "buffer_font_family": "JetBrains Mono",
-  "buffer_font_size": 14,
+  "buffer_font_size": 13,
   "buffer_line_height": { "custom": 1.7 },
   "buffer_font_features": { "calt": true },
 
@@ -34,7 +34,6 @@
   "show_edit_predictions": true,
   "use_autoclose": true,
 
-  "toolbar": { "breadcrumbs": true, "quick_actions": false },
   "tabs": { "git_status": false, "close_position": "right" },
   "tab_bar": { "show": true, "show_nav_history_buttons": false },
   "project_panel": {
@@ -49,6 +48,11 @@
   "centered_layout": {
     "left_padding": 0.1,
     "right_padding": 0.1
+  },
+
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false
   },
 
   "terminal": {
