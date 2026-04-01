@@ -12,4 +12,5 @@ source = ~/.config/hypr/keybindings.conf
 
 source = ~/.config/hypr/layerrules.conf
 source = ~/.config/hypr/windowrules.conf
+source = ~/.config/hypr/misc.conf
 ```
