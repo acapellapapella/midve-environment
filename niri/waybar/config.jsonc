@@ -8,16 +8,10 @@
 
   "modules-left": [
     "clock",
-    "custom/separator",
-    "hyprland/window"
-  ],
-
-  "modules-center": [
-    "hyprland/workspaces"
+    "custom/separator"
   ],
 
   "modules-right": [
-    "cpu",
     "memory",
     "custom/separator",
     "pulseaudio",
@@ -26,7 +20,6 @@
     "custom/separator",
     "bluetooth",
     "custom/separator",
-    "hyprland/language",
     "tray"
   ],
 
@@ -40,40 +33,6 @@
         "today": "<b>{}</b>"
       }
     }
-  },
-
-  "hyprland/window": {
-    "format": "{}",
-    "max-length": 60,
-    "separate-outputs": true,
-    "rewrite": {
-      "(.*) — Mozilla Firefox": "$1",
-      "(.*) - fish": "$1",
-      "(.*) - zsh": "$1",
-      "(.*) - nvim": "$1",
-      "kitty": "$1",
-      "": ""
-    }
-  },
-
-  "hyprland/workspaces": {
-    "format": "{name}",
-    "on-click": "activate",
-    "all-outputs": false,
-    "active-only": false
-  },
-
-  "hyprland/language": {
-    "format": "{}",
-    "format-en": "EN",
-    "format-ru": "RU",
-    "keyboard-name": "sonix-usb-device"
-  },
-
-  "cpu": {
-    "format": "󰻠  {usage}%",
-    "interval": 2,
-    "tooltip": false
   },
 
   "memory": {

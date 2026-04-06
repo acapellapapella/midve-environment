@@ -44,61 +44,16 @@ tooltip {
   color: #ffffff;
 }
 
-#window {
-  color: #2a2a38;
-  padding: 0 10px;
-  font-size: 10px;
-  font-weight: 400;
-}
-
 #custom-separator {
   color: #18181e;
-  padding: 0 1px;
+  padding: 0 4px;
   font-size: 14px;
 }
 
-#workspaces {
-  margin: 3px 4px;
-  padding: 0 2px;
-  background-color: #0c0c14;
-  border-radius: 6px;
-  border: 1px solid #16161e;
-}
-
-#workspaces button {
-  padding: 0 10px;
-  margin: 2px 1px;
-  min-width: 10px;
-  color: #282838;
-  background-color: transparent;
-  border-radius: 4px;
-  font-size: 11px;
-  font-weight: 700;
-}
-
-#workspaces button:hover {
-  color: #606078;
-  background-color: #141422;
-}
-
-#workspaces button.active {
-  color: #08080e;
-  background-color: #b8b8d8;
-  font-weight: 800;
-}
-
-#workspaces button.urgent {
-  color: #08080e;
-  background-color: #c8a0a8;
-}
-
-#pulseaudio,
-#wireplumber,
-#network,
-#cpu,
-#memory,
-#bluetooth,
-#language {
+#memory {
+  color: #505060;
+  background-color: #16161e;
+  border: 1px solid #202030;
   padding: 0 10px;
   margin: 3px 2px;
   border-radius: 6px;
@@ -106,49 +61,29 @@ tooltip {
   font-size: 11px;
 }
 
-#cpu {
-  color: #505060;
-  background-color: #18181e;
-  border: 1px solid #222230;
-}
-
-#cpu.warning {
-  color: #504840;
-  background-color: #201810;
-}
-
-#cpu:hover {
-  background-color: #1e1e26;
-  color: #606070;
-}
-
-#memory {
-  color: #505060;
-  background-color: #16161e;
-  border: 1px solid #202030;
-}
-
 #memory:hover {
   background-color: #1c1c26;
   color: #606070;
 }
 
-#pulseaudio,
-#wireplumber {
+#pulseaudio {
   color: #505060;
   background-color: #18181e;
   border: 1px solid #222230;
+  padding: 0 10px;
+  margin: 3px 2px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 11px;
 }
 
-#pulseaudio.muted,
-#wireplumber.muted {
+#pulseaudio.muted {
   background-color: #0e0e14;
   border: 1px solid #181820;
   color: #242430;
 }
 
-#pulseaudio:hover,
-#wireplumber:hover {
+#pulseaudio:hover {
   background-color: #1e1e28;
   color: #606070;
 }
@@ -157,6 +92,11 @@ tooltip {
   color: #505060;
   background-color: #16161e;
   border: 1px solid #202030;
+  padding: 0 10px;
+  margin: 3px 2px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 11px;
 }
 
 #network.disconnected {
@@ -179,6 +119,11 @@ tooltip {
   color: #505060;
   background-color: #16161e;
   border: 1px solid #202030;
+  padding: 0 10px;
+  margin: 3px 2px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 11px;
 }
 
 #bluetooth.disabled {
@@ -199,6 +144,8 @@ tooltip {
   font-size: 9px;
   font-weight: 800;
   padding: 0 8px;
+  margin: 3px 2px;
+  border-radius: 6px;
 }
 
 #tray {
