@@ -1,0 +1,32 @@
+// windows
+window-rule {
+    geometry-corner-radius 10
+    clip-to-geometry true
+}
+
+// Thunar
+window-rule {
+    match app-id="thunar"
+    default-column-width { fixed 1000; }
+}
+
+// Telegram Media viewer
+window-rule {
+    match app-id=r#"org\.telegram\.desktop"# title="Media viewer"
+    open-floating true
+    default-column-width { fixed 1200; }
+}
+
+// pavucontrol
+window-rule {
+    match app-id="pavucontrol"
+    open-floating true
+    default-column-width { fixed 700; }
+}
+
+// blueman
+window-rule {
+    match app-id="blueman-manager"
+    open-floating true
+    default-column-width { fixed 600; }
+}
