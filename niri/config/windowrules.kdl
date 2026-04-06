@@ -30,3 +30,19 @@ window-rule {
     open-floating true
     default-column-width { fixed 600; }
 }
+
+// fullscreen
+window-rule {
+    match app-id=r#"^dev\.zed\.Zed$"#
+    open-fullscreen true
+}
+
+window-rule {
+    match app-id=r#".*spotify.*"#
+    open-fullscreen true
+}
+
+window-rule {
+    match app-id=r#".*code.*"#
+    open-fullscreen true
+}
