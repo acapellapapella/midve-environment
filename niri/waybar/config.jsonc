@@ -11,12 +11,17 @@
     "custom/separator"
   ],
 
+  "modules-center": [
+    "niri/workspaces"
+  ],
+
   "modules-right": [
     "memory",
     "custom/separator",
     "pulseaudio",
     "custom/separator",
     "network",
+    "niri/language",
     "custom/separator",
     "bluetooth",
     "custom/separator",
@@ -45,18 +50,10 @@
     "format": "󰕾  {volume}%",
     "format-muted": "󰝟  mute",
     "on-click": "pavucontrol",
-	"max-volume": 150,
+    "max-volume": 150,
     "on-scroll-up": "wpctl set-volume @DEFAULT_SINK@ 2%+ --limit 1.5",
     "on-scroll-down": "wpctl set-volume @DEFAULT_SINK@ 2%-",
     "tooltip": false
-  },
-
-  "bluetooth": {
-    "format": "󰂯",
-    "format-connected": "󰂱  {device_alias}",
-    "format-disabled": "󰂲",
-    "tooltip-format": "{controller_alias}  ·  {num_connections} connected",
-    "on-click": "blueman-manager"
   },
 
   "network": {
@@ -67,6 +64,15 @@
     "tooltip-format-ethernet": "{ifname}\n{ipaddr}",
     "on-click": "kitty -e nmtui",
     "interval": 5
+  },
+
+  "niri/language": {
+    "format": "{short}",
+    "tooltip-format": "{long}"
+  },
+
+  "niri/workspaces": {
+    "format": "{value}"
   },
 
   "tray": {
