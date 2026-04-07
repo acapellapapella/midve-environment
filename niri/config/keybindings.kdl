@@ -14,10 +14,10 @@ binds {
     Shift+Print { screenshot-window; }
 
     // Focus
+    Alt+Tab { toggle-overview; }
     Mod+U { focus-workspace-down; }
     Mod+I { focus-workspace-up; }
 
-    Alt+Tab { focus-window-down-or-column-right; }
     Mod+Left { focus-column-left; }
     Mod+Right { focus-column-right; }
     Mod+Up { focus-window-up; }
