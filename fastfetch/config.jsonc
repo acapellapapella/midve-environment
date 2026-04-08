@@ -12,6 +12,9 @@
         }
     },
     "display": {
+    	"key": {
+    		"width": 12
+    	},
         "separator": "  ",
         "color": {
             "keys": "white",
@@ -67,6 +70,11 @@
         {
             "type": "packages",
             "key": "  pkgs",
+            "keyColor": "cyan"
+        },
+        {
+            "type": "wm",
+            "key": "  wm",
             "keyColor": "cyan"
         },
         {
