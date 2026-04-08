@@ -1,0 +1,25 @@
+// Fix for video memory leaks on VIDIA in niri
+// must be located in /etc/nvidia/nvidia-application-profiles-rc.d/
+
+{
+  "rules": [
+    {
+      "pattern": {
+        "feature": "procname",
+        "matches": "niri"
+      },
+      "profile": "Limit Free Buffer Pool On Wayland Compositors"
+    }
+  ],
+  "profiles": [
+    {
+      "name": "Limit Free Buffer Pool On Wayland Compositors",
+      "settings": [
+        {
+          "key": "GLVidHeapReuseRatio",
+          "value": 0
+        }
+      ]
+    }
+  ]
+}
