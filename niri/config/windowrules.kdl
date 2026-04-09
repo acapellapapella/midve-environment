@@ -18,12 +18,6 @@ window-rule {
     default-window-height { fixed 800; }
 }
 
-// Firefox
-window-rule {
-    match app-id=r#".*firefox.*"#
-    open-maximized true
-}
-
 // pavucontrol
 window-rule {
     match app-id="pavucontrol"
@@ -38,18 +32,28 @@ window-rule {
     default-column-width { fixed 600; }
 }
 
-// fullscreen
+// maximized
+
+// Firefox
+window-rule {
+    match app-id=r#".*firefox.*"#
+    open-maximized true
+}
+
+// Zed
 window-rule {
     match app-id=r#"^dev\.zed\.Zed$"#
-    open-fullscreen true
+    open-maximized true
 }
 
+// Spotify
 window-rule {
     match app-id=r#".*spotify.*"#
-    open-fullscreen true
+    open-maximized true
 }
 
+// VS Code, etc
 window-rule {
     match app-id=r#".*code.*"#
-    open-fullscreen true
+    open-maximized true
 }
