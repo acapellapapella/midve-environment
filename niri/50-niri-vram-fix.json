@@ -1,6 +1,3 @@
-// Fix for video memory leaks on VIDIA in niri
-// must be located in /etc/nvidia/nvidia-application-profiles-rc.d/
-
 {
   "rules": [
     {
