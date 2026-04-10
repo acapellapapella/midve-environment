@@ -66,6 +66,11 @@
     "interval": 5
   },
 
+  "bluetooth": {
+    "on-click": "blueman-manager",
+    "interval": 5
+  },
+
   "niri/language": {
     "format": "{short}",
     "tooltip-format": "{long}"
