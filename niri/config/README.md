@@ -7,4 +7,5 @@ Blank:
 include "layout.kdl"
 include "windowrules.kdl"
 include "keybindings.kdl"
+include "layerrules.kdl"
 ```
