@@ -1,7 +1,7 @@
 binds {
     // Apps
     Ctrl+Alt+T { spawn "kitty"; }
-    Ctrl+Alt+F { spawn "thunar"; }
+    Ctrl+Alt+F { spawn "nautilus"; }
     Mod+D { spawn "rofi" "-show" "drun"; }
 
     // Session
