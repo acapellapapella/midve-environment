@@ -1,3 +1,8 @@
+// overview
+overview {
+    zoom 0.50
+}
+
 // windows
 window-rule {
     geometry-corner-radius 10
