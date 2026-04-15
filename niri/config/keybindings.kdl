@@ -23,6 +23,8 @@ binds {
     Mod+Up { focus-window-up; }
     Mod+Down { focus-window-down; }
     Mod+C { center-column; }
+    Mod+Shift+Left  { move-column-left; }
+    Mod+Shift+Right { move-column-right; }
 
     // Float
     Mod+T { toggle-window-floating; }
