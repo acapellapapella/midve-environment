@@ -8,7 +8,8 @@
 
   "modules-left": [
     "clock",
-    "custom/separator"
+    "custom/separator",
+    "custom/ai"
   ],
 
   "modules-center": [
@@ -84,6 +85,12 @@
     "icon-size": 14,
     "spacing": 10,
     "show-passive-items": false
+  },
+
+  "custom/ai": {
+    "format": "🤖",
+    "on-click": "bash -c '~/.local/bin/to_ai.sh'",
+    "tooltip": false
   },
 
   "custom/separator": {
