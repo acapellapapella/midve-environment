@@ -15,8 +15,8 @@ binds {
 
     // Focus
     Alt+Tab { toggle-overview; }
-    Mod+U { focus-workspace-down; }
-    Mod+I { focus-workspace-up; }
+    Mod+Ctrl+Down { focus-workspace-down; }
+    Mod+Ctrl+Up { focus-workspace-up; }
 
     Mod+Left { focus-column-left; }
     Mod+Right { focus-column-right; }
