@@ -15,4 +15,4 @@ border-size=2
 border-radius=12
 
 anchor=top-right
-layer=overlay
+layer=top
