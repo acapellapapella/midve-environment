@@ -6,8 +6,10 @@ APP_ID="spotify"
 get() {
 	track=$(niri msg --json windows | jq -r '.[] | select(.app_id=="'$APP_ID'") | "" + .title')
 
-	if [[ -n "$track" && "$track" != "" ]]; then
-		echo "now playing: $track"
+	if [[ -n "$track" && "$track" != "" ]] \
+		&& [[ "$track" != "Spotify Premium" \
+		&& "$track" != "Spotify Free" ]]; then
+		echo "	now playing: $track"
 	else
 		echo ""
 	fi
