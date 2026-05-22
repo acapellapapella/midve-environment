@@ -6,8 +6,8 @@ APP_ID="helium"
 
 # define window
 WIN_ID=$(niri msg --json windows | \
-  jq -r --arg app "$APP_ID" \
-  '.[] | select(.app_id == $app) | .id' | head -1)
+  	jq -r --arg app "$APP_ID" \
+   '.[] | select(.app_id == $app) | .id' | head -1)
 
 if xdg-open https://chat.openai.com/; then
 	if [ -n "$WIN_ID" ]; then
