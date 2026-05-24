@@ -2,6 +2,7 @@
 overview {
     zoom 0.50
 }
+/* ── Правая панель ──────────────────────────────────────── */
 
 // windows
 window-rule {
@@ -9,6 +10,19 @@ window-rule {
     clip-to-geometry true
 }
 
+// Kitty
+window-rule {
+    match app-id="kitty"
+
+    opacity 0.83
+
+    background-effect {
+        xray false
+        blur true
+    }
+}
+
+// Nautilus
 window-rule {
     match app-id="nautilus"
     default-column-width { fixed 1000; }
