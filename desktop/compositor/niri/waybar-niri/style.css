@@ -6,20 +6,19 @@
   border-radius: 0;
   min-height: 0;
 }
-
 window#waybar {
   background-color: alpha(#06060a, 0.94);
   color: #505060;
   border-bottom: 1px solid #10101a;
+  min-height: 0;
+  padding: 0 4px;
 }
-
 .modules-left,
 .modules-center,
 .modules-right {
   margin: 0;
   padding: 0;
 }
-
 tooltip {
   background-color: #0e0e16;
   border: 1px solid #20202e;
@@ -27,9 +26,6 @@ tooltip {
   border-radius: 8px;
   padding: 6px 14px;
 }
-
-#workspaces,
-#workspaces button,
 #pulseaudio,
 #wireplumber,
 #network,
@@ -43,56 +39,64 @@ tooltip {
   color: #d8d8f0;
   border-radius: 6px;
 }
-
 #clock {
   padding: 0 14px;
   margin: 3px 4px 3px 2px;
   font-size: 12px;
   font-weight: 700;
 }
-
 #clock:hover {
   background-color: #18182a;
   color: #ffffff;
 }
-
 #window {
   color: #2a2a38;
   padding: 0 10px;
   font-size: 10px;
   font-weight: 400;
 }
-
 #workspaces {
-  margin: 3px 4px;
-  padding: 0 2px;
+  margin: 0 4px;
+  padding: 0 4px;
+  background-color: transparent;
+  border: none;
 }
-
+#workspaces button,
+#workspaces button:hover,
+#workspaces button.active,
+#workspaces button.urgent {
+  margin: 6px 2px;
+  min-width: 0;
+  min-height: 0;
+  border: none;
+  font-size: 0;
+  color: transparent;
+}
 #workspaces button {
-  padding: 0 10px;
-  margin: 2px 1px;
-  min-width: 10px;
-  border-radius: 4px;
-  font-size: 11px;
-  font-weight: 700;
+  padding: 0 5px;
+  border-radius: 50%;
+  background-color: #2a2a3e;
+  transition: background-color 0.2s ease;
 }
-
 #workspaces button:hover {
-  background-color: #18182a;
-  color: #ffffff;
+  background-color: #505068;
+  padding: 0 5px;
+  border-radius: 50%;
 }
-
 #workspaces button.active {
-  background-color: #b8b8d8;
-  color: #08080e;
-  font-weight: 800;
+  animation: droplet 0.3s ease forwards;
+  padding: 0 14px;
+  margin: 6px 2px;
+  border-radius: 10px;
+  border: none;
+  font-size: 0;
+  color: transparent;
 }
-
 #workspaces button.urgent {
   background-color: #c8a0a8;
-  color: #08080e;
+  padding: 0 5px;
+  border-radius: 50%;
 }
-
 #pulseaudio,
 #wireplumber,
 #network,
@@ -104,7 +108,6 @@ tooltip {
   font-weight: 600;
   font-size: 11px;
 }
-
 #pulseaudio:hover,
 #wireplumber:hover,
 #network:hover,
@@ -113,7 +116,6 @@ tooltip {
   background-color: #18182a;
   color: #ffffff;
 }
-
 #pulseaudio.muted,
 #wireplumber.muted,
 #network.disconnected,
@@ -122,22 +124,31 @@ tooltip {
   border: 1px solid #1e1e30;
   color: #d8d8f0;
 }
-
 #language {
   font-size: 9px;
   font-weight: 800;
   padding: 0 8px;
 }
-
 #tray {
   padding: 0 10px;
   margin: 3px 2px;
 }
-
 #tray > .passive {
   -gtk-icon-effect: dim;
 }
-
 #tray > .needs-attention {
   -gtk-icon-effect: highlight;
+}
+#custom-separator {
+  color: #2a2a3e;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+}
+
+@keyframes droplet {
+  0% { background-color: #505068; }
+  60% { background-color: #9090b8; }
+  100% { background-color: #b8b8d8; }
 }
