@@ -9,9 +9,8 @@ window-rule {
     clip-to-geometry true
 }
 
-// Thunar
 window-rule {
-    match app-id="thunar"
+    match app-id="nautilus"
     default-column-width { fixed 1000; }
 }
 
