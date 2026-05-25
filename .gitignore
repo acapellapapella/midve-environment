@@ -1,2 +1,4 @@
 desktop/compositor/niri/config/config.kdl
 # niri config (optional settings and environment variables)
+repo-utils/
+# scripts that make it easier to test new configurations, etc.
