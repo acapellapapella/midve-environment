@@ -2,7 +2,7 @@ layer-rule {
     match namespace="rofi"
     shadow {
         on
-        softness 60
+        softness 5
         spread 0
         offset x=0 y=8
         color "#00000066"
