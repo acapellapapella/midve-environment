@@ -87,6 +87,11 @@ window-rule {
     open-maximized true
 }
 
+window-rule {
+    match app-id="steam"
+    open-maximized true
+}
+
 // VS Code, etc
 window-rule {
     match app-id=r#".*code.*"#
